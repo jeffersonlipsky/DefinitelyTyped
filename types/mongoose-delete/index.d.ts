@@ -81,7 +81,7 @@ declare namespace MongooseDelete {
             conditions?: any,
             deleteBy?: any,
             fn?: Callback<T, this>,
-        ): mongoose.Query<ReturnType<mongoose.Model<T>["deleteMany"]>, T, QueryHelpers>;
+        ): mongoose.Query<ReturnType<mongoose.Model<T>["updateMany"]>, T, QueryHelpers>;
 
         /**
          * Restore documents by conditions
